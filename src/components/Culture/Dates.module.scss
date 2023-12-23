@@ -1,0 +1,26 @@
+@use "../../scss/variables" as *;
+@use "../../scss/mixins" as *;
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid $txt-main;
+    border-bottom: 1px solid $txt-main;
+    padding-block: $spacing-sm-1;
+
+    .flex{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        .heading{
+            text-transform: none;
+            font-size: $txt-sm-3;
+            color: gray;
+        }
+    }
+}

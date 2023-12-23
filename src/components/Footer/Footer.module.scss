@@ -1,0 +1,65 @@
+@use "../../scss/mixins" as *;
+@use "../../scss/variables" as *;
+
+.container{
+    @include container;
+    margin-top: $spacing-l-2;
+    padding-block: $spacing-nm-2;
+    background-color: $yellow;
+    
+    .content{
+        @include content;
+    }
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+
+    .left{
+        font-size: $txt-l-1;
+        font-family: 'Bebas Neue', sans-serif;
+        cursor: default;
+    }
+
+    .right{
+        display: flex;
+        gap: $spacing-nm-4;
+        font-size: $txt-sm-2;
+
+        .list{
+            display: flex;
+            flex-direction: column;
+            gap: $spacing-sm-1;
+        }
+    }
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    cursor: default;
+
+    .title{
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: $txt-rsp-6;
+        font-style: italic;
+        line-height: 1;
+        color: $bg-main;
+    }
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    font-size: $txt-sm-2;
+
+    .left{
+        cursor: default;
+    }
+    
+    .right{
+        display: flex;
+        gap: $spacing-nm-1;
+    }
+}

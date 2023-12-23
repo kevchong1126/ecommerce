@@ -1,0 +1,26 @@
+@use "../../scss/variables" as *;
+@use "../../scss/mixins" as *;
+
+.wrapper{
+    border: 1px solid $txt-main;
+    width: 100%;
+    height: 86vh;
+    overflow: hidden;
+
+    
+    .imgContainer{
+        width: 100%;
+        height: 100%;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            @include transition;
+
+            &:hover{
+                scale: 1.02;
+            }
+        }
+    }
+}

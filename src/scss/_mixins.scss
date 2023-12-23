@@ -1,0 +1,30 @@
+
+@mixin container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+@mixin content{
+    width: 96%;
+    height: 100%;
+    max-width: 1768px;
+    margin: 0 auto;
+}
+
+@mixin flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin absoluteCenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin transition($property: all, $duration: 0.6s, $ease: linear){
+    transition: $property $duration $ease;
+}

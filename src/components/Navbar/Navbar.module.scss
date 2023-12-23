@@ -1,0 +1,54 @@
+@use "../../scss/variables" as *;
+@use "../../scss/mixins" as *;
+
+.container{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid $txt-main;
+    background-color: $bg-main;
+    z-index: 99;
+
+    .content{
+        @include content;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.left{
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+    font-size: $txt-l-2;
+    font-style: italic;
+}
+
+.center{
+    margin-right: $spacing-l-5;
+
+    .links{
+        width: 100%;
+        display: flex;
+        gap: $spacing-nm-2;
+        
+        a{
+            @include transition($duration: 0.2s);
+            
+            &:hover{
+                color: $yellow;
+            }
+        }
+    }
+}
+
+.right{
+    display: flex;
+    gap: $spacing-nm-2;
+
+    .icon{
+        color: black;
+        font-size: $txt-nm-3;
+    }
+}

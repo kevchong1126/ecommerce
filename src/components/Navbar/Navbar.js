@@ -1,0 +1,42 @@
+import React from 'react'
+import styles from "./Navbar.module.scss"
+import { Link } from "react-router-dom";
+import { CiUser } from "react-icons/ci";
+import { IoBagHandleOutline } from "react-icons/io5";
+
+const Navbar = () => {
+  return (
+    <div className={styles.container}>
+        <div className={styles.content}>
+            <div className={styles.left}>
+                <Link to="/" className={styles.title}>HYPED</Link>
+            </div>
+            <div className={styles.center}>
+                <ul className={styles.links}>
+                    <li className={styles.link}>
+                        <Link to="/shop">Shop </Link>
+                    </li>
+                    <li className={styles.link}>
+                        <Link to="/shop/shoes">Sneakers</Link>
+                    </li>
+                    <li className={styles.link}>
+                        <Link to="/apparel">Apparel</Link>
+                    </li>
+                    <li className={styles.link}>
+                        <Link to="/accessories">Accessories</Link>
+                    </li>
+                    <li className={styles.link}>
+                        <Link to="/culture">Culture</Link>
+                    </li>
+                </ul>
+            </div>
+            <div className={styles.right}>
+                <Link to={"/login"}><CiUser className={styles.icon}/></Link>
+                <IoBagHandleOutline className={styles.icon}/>
+            </div>
+        </div>
+    </div>
+  )
+}
+
+export default Navbar
