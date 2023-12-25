@@ -1,0 +1,9 @@
+@use "../../scss/variables" as *;
+
+.wrapper{
+    display: flex;
+    gap: $spacing-sm-1;
+    padding: 2px $spacing-sm-2;
+    border: 1px solid $txt-main;
+    border-radius: 2rem;
+}

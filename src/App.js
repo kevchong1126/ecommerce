@@ -8,14 +8,15 @@ import Scroll from "./Scroll";
 import Cart from "./components/Cart/Cart"
 
 function App() {
+  
   return (
-    <div >
+    <>
         <Navbar />
         <AllRoutes />
         <Footer />
         <Cart />
         <Scroll />
-    </div>  
+    </>  
   );
 }
 

@@ -1,10 +1,16 @@
 import React from 'react'
 import styles from "./Navbar.module.scss"
+
 import { Link } from "react-router-dom";
 import { CiUser } from "react-icons/ci";
 import { IoBagHandleOutline } from "react-icons/io5";
 
+import { useDispatch } from 'react-redux';
+import { open } from '../../redux/openCart';
+
 const Navbar = () => {
+    const dispatch = useDispatch();
+
   return (
     <div className={styles.container}>
         <div className={styles.content}>
@@ -32,7 +38,9 @@ const Navbar = () => {
             </div>
             <div className={styles.right}>
                 <Link to={"/login"}><CiUser className={styles.icon}/></Link>
-                <IoBagHandleOutline className={styles.icon}/>
+                <div className={styles.bag} onClick={() => dispatch(open())}>
+                    <IoBagHandleOutline className={styles.icon} />
+                </div>
             </div>
         </div>
     </div>

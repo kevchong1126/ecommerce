@@ -1,0 +1,69 @@
+@use "../../scss/variables" as *;
+@use "../../scss/mixins" as *;
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+
+    .track{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-wrap: nowrap;
+
+        .card{
+            width: 100%;
+            height: 520px;
+            border-left: 1px solid $txt-main;
+            border-top: 1px solid $txt-main;
+            border-bottom: 1px solid $txt-main;
+            padding: $spacing-sm-3;
+
+            &:first-of-type{
+                border-left: none;
+            }
+
+            .imgContainer{
+                position: relative;
+                width: 100%;
+                height: 85%;
+                border: 1px solid $txt-main;
+
+                .thumbnail{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                .logo{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 9;
+                    width: 20%;
+                }
+            }
+
+            .titleContainer{
+                font-size: $txt-l-1;
+                margin-top: $spacing-sm-1;
+                @include bebas;
+
+                p{
+                    display: inline-block;
+                    letter-spacing: 2px;
+                }
+            }
+
+            .priceContainer{
+                font-size: $txt-nm-4;
+                @include stint;
+
+                .price{
+                    display: inline-block;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+    }
+}

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Stint+Ultra+Condensed&display=swap');
 
 @mixin container{
     width: 100%;
@@ -27,4 +28,12 @@
 
 @mixin transition($property: all, $duration: 0.6s, $ease: linear){
     transition: $property $duration $ease;
+}
+
+@mixin stint{
+    font-family: 'Stint Ultra Condensed', serif;
+}
+
+@mixin bebas{
+    font-family: 'bebas neue', sans-serif;
 }
