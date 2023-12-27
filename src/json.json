@@ -65,9 +65,9 @@
     {
         "title": "Air more uptempo low",
         "image": "./images/sneaker8.webp",
-        "brand": "jordan",
+        "brand": "nike",
         "price": "114",
-        "logo": "./images/jordan.webp",
+        "logo": "./images/nike.webp",
         "id": "de6cdd97",
         "sizes" : ["8", "9", "10", "11"]
     },
@@ -153,7 +153,7 @@
         "sizes" : ["8", "9", "10", "11"]
     },
     {
-        "title": "Dunk high w",
+        "title": "smooth shoe",
         "image": "./images/sneaker18.webp",
         "brand": "birkenstock",
         "price": "219",
@@ -162,7 +162,7 @@
         "sizes" : ["8", "9", "10", "11"]
     },
     {
-        "title": "Boston black leather",
+        "title": "Boston black shoe",
         "image": "./images/sneaker19.webp",
         "brand": "birkenstock",
         "price": "219",
@@ -171,7 +171,7 @@
         "sizes" : ["8", "9", "10", "11"]
     },
     {
-        "title": "Sfb mink suede",
+        "title": "Sfb mink shoe",
         "image": "./images/sneaker20.webp",
         "brand": "birkenstock",
         "price": "219",
@@ -257,7 +257,7 @@
 
 
     {
-        "title": "Elite crew",
+        "title": "Elite crew socks",
         "image": "./images/accessory1.webp",
         "brand": "nike",
         "price": "29",
@@ -266,7 +266,7 @@
         "sizes" : []
     },
     {
-        "title": "blue fannypack",
+        "title": "blue bag",
         "image": "./images/accessory2.webp",
         "brand": "north face",
         "price": "45",
@@ -275,7 +275,7 @@
         "sizes" : []
     },
     {
-        "title": "gold sunproof",
+        "title": "gold sunproof sunglasses",
         "image": "./images/accessory3.webp",
         "brand": "rayban",
         "price": "67",
@@ -284,7 +284,7 @@
         "sizes" : []
     },
     {
-        "title": "bronze eagle",
+        "title": "bronze eagle sunglasses",
         "image": "./images/accessory4.webp",
         "brand": "rayban",
         "price": "80",
@@ -293,7 +293,7 @@
         "sizes" : []
     },
     {
-        "title": "Corrigan steel",
+        "title": "Corrigan steel sunglasses",
         "image": "./images/accessory5.webp",
         "brand": "rayban",
         "price": "79",
@@ -302,7 +302,7 @@
         "sizes" : []
     },
     {
-        "title": "Julia",
+        "title": "Julia sunglasses",
         "image": "./images/accessory6.webp",
         "brand": "rayban",
         "price": "54",
@@ -311,7 +311,7 @@
         "sizes" : []
     },
     {
-        "title": "Recicled 66 classic",
+        "title": "Recicled 66 cap",
         "image": "./images/accessory7.webp",
         "brand": "nb",
         "price": "69",
@@ -320,7 +320,7 @@
         "sizes" : []
     },
     {
-        "title": "Hooligan 79",
+        "title": "Hooligan 79 sunglasses",
         "image": "./images/accessory8.webp",
         "brand": "new balance",
         "price": "63",
@@ -329,7 +329,7 @@
         "sizes" : []
     },
     {
-        "title": "Elemental backpack",
+        "title": "Elemental bag",
         "image": "./images/accessory9.webp",
         "brand": "nike",
         "price": "57",
@@ -338,7 +338,7 @@
         "sizes" : []
     },
     {
-        "title": "Silk black",
+        "title": "Silk black socks",
         "image": "./images/accessory10.webp",
         "brand": "nike",
         "price": "85",
@@ -347,7 +347,7 @@
         "sizes" : []
     },
     {
-        "title": "Daily cushion",
+        "title": "Daily cushion socks",
         "image": "./images/accessory11.webp",
         "brand": "nike",
         "price": "45",
@@ -356,13 +356,60 @@
         "sizes" : []
     },
     {
-        "title": "No show",
+        "title": "No show socks",
         "image": "./images/accessory12.webp",
         "brand": "nike",
         "price": "43",
         "logo": "./images/nike.webp",
         "id": "b158e7c2",
         "sizes" : []
+    },
+
+
+    {
+        "title": "knit top jersey",
+        "image": "./images/apparel9.webp",
+        "brand": "north face",
+        "price": "74",
+        "logo": "./images/nf.avif",
+        "id": "bb7f8d6d",
+        "sizes" : ["s", "m", "l"]
+    },
+    {
+        "title": "Chicago bulls jersey",
+        "image": "./images/apparel10.webp",
+        "brand": "nike",
+        "price": "65",
+        "logo": "./images/nike.webp",
+        "id": "dd61abf2",
+        "sizes" : ["s", "m", "l"]
+    },
+    {
+        "title": "Golden state jersey",
+        "image": "./images/apparel11.webp",
+        "brand": "nike",
+        "price": "89",
+        "logo": "./images/nike.webp",
+        "id": "afcde7fd",
+        "sizes" : ["s", "m", "l"]
+    },
+    {
+        "title": "Los angeles jersey",
+        "image": "./images/apparel12.webp",
+        "brand": "nike",
+        "price": "75",
+        "logo": "./images/nike.webp",
+        "id": "7b72c908",
+        "sizes" : ["s", "m", "l"]
+    },
+    {
+        "title": "Brooklyn nets jersey",
+        "image": "./images/apparel13.webp",
+        "brand": "nike",
+        "price": "78",
+        "logo": "./images/nike.webp",
+        "id": "bed293ed",
+        "sizes" : ["s", "m", "l"]
     }
 
 ]

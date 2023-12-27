@@ -1,0 +1,39 @@
+@use "../scss/variables" as *;
+@use "../scss/mixins" as *;
+
+.container{
+    @include container;
+    margin-top: $spacing-l-1;
+    
+    .content{
+        @include content;
+    }
+}
+
+.titleContainer{
+    text-align: center;
+    margin-block: $spacing-nm-1;
+    font-size: $txt-rsp-2;
+    @include bebas;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid $txt-main;
+
+    .left{
+        width: 35%;
+        padding-top: $spacing-sm-4;
+        padding-right: $spacing-nm-2;
+        border-right: 1px solid $txt-main;
+    }
+
+    .right{
+        width: 65%;
+        padding-top: $spacing-sm-4;
+        padding-inline: $spacing-sm-3;
+    }
+}

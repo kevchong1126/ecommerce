@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 
 const Scroll = () => {
     const path = useLocation();
+    
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [path]);

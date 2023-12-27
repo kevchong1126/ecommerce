@@ -1,0 +1,11 @@
+@use "../scss/variables" as *;
+@use "../scss/mixins" as *;
+
+.container{
+    @include container;
+    margin-top: $spacing-l-1;
+    
+    .content{
+        @include content;
+    }
+}

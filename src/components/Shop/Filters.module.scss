@@ -1,0 +1,22 @@
+@use "../../scss/variables" as *;
+@use "../../scss/mixins" as *;
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+
+    .optionContainer{
+        padding-block: $spacing-sm-2;
+        border-bottom: 1px solid $txt-main;
+
+        .optionsLabel{
+            cursor: pointer;
+            @include bebas;
+
+            .option{
+                font-size: $txt-nm-3;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}

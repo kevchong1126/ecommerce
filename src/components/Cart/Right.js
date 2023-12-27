@@ -33,7 +33,7 @@ const Right = () => {
                 </div>
             </div>
             <div className={styles.btnContainer}>
-                <button className={styles.continue}>Continue Shopping</button>
+                <button className={styles.continue} onClick={() => dispatch(close())}>Continue Shopping</button>
                 <button className={styles.proceed}>Proceed to checkout</button>
             </div>
         </div>
