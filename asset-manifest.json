@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/ecommerce/static/css/main.97ff139f.css",
+    "main.js": "/ecommerce/static/js/main.0063c773.js",
+    "static/media/category3.webp": "/ecommerce/static/media/category3.81e57ec9f13eecc940ec.webp",
+    "static/media/hero.webp": "/ecommerce/static/media/hero.e3db529721cb8d9681a4.webp",
+    "static/media/blog8.webp": "/ecommerce/static/media/blog8.b75a1787086261393879.webp",
+    "static/media/blog1.webp": "/ecommerce/static/media/blog1.6ab8d905b6b0cfc00610.webp",
+    "static/media/blog6.webp": "/ecommerce/static/media/blog6.94721c3b283d106e9b7c.webp",
+    "static/media/category1.webp": "/ecommerce/static/media/category1.db9e4b5abbe0fb723b38.webp",
+    "static/media/blog7.webp": "/ecommerce/static/media/blog7.aa0cda753fa4f4b52e4a.webp",
+    "static/media/blog4.webp": "/ecommerce/static/media/blog4.871618b7854ea44fb606.webp",
+    "static/media/paypal.png": "/ecommerce/static/media/paypal.563e028b26c807973a14.png",
+    "static/media/blog5.webp": "/ecommerce/static/media/blog5.ace40c7d54424b51a3c2.webp",
+    "static/media/blog3.webp": "/ecommerce/static/media/blog3.4133b23bb27de0f7ec17.webp",
+    "static/media/category2.webp": "/ecommerce/static/media/category2.a207debfaed674860484.webp",
+    "static/media/blog2.webp": "/ecommerce/static/media/blog2.7365d76d94369e6b3447.webp",
+    "static/media/happy.avif": "/ecommerce/static/media/happy.976347b2851a2f912d35.avif",
+    "index.html": "/ecommerce/index.html",
+    "main.97ff139f.css.map": "/ecommerce/static/css/main.97ff139f.css.map",
+    "main.0063c773.js.map": "/ecommerce/static/js/main.0063c773.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.97ff139f.css",
+    "static/js/main.0063c773.js"
+  ]
+}
