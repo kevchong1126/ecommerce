@@ -3,16 +3,15 @@ import styles from "./Options.module.scss"
 import { Link } from 'react-router-dom';
 
 const Options = ({el}) => {
-  const {image, title, price, id} = el;
 
   return (
     <div className={styles.wrapper}>
-      <Link to={`/product/${id}`}>
+      <Link to={`/product/${el.id}`}>
           <div className={styles.imgContainer}>
-              <img src={image}></img>
+              <img src={'/' + el.image} alt={el.id}></img>
           </div>
-          <p className={styles.title}>{title}</p>
-          <p className={styles.price}>${price}</p>
+          <p className={styles.title}>{el.title}</p>
+          <p className={styles.price}>${el.price}</p>
       </Link>
     </div>
   )

@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import styles from "./Home.module.scss"
 
 /*Components*/
@@ -18,7 +18,7 @@ import blog2 from "../images/blog2.webp"
 import blog3 from "../images/blog3.webp"
 import blog4 from "../images/blog4.webp"
 
-import json from "../json.json"
+import json from "../json"
 
 const titles = ["Q-beams' birthplace of dreams", 
 "Wanda lephoto", 
@@ -42,7 +42,7 @@ const Home = () => {
     <div className={styles.container}>
         <div className={styles.content}>
             <Hero image={hero} alt="Jordan" id={json[1].id}/>
-            <Category img1={cat1} img2={cat2} img3={cat3} url1="/shop/birkenstock" url2="/shop/ray-ban" url3="/shop/shirt" />
+            <Category img1={cat1} img2={cat2} img3={cat3} url1="shoe" url2="sunglass" url3="shirt" />
             <Anim text={"Dunk"} color={false}/>
             <HeroProducts array={dunk} />
             <Anim text={"Retro's"} color={false}/>

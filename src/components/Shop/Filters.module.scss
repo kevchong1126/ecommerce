@@ -1,13 +1,23 @@
 @use "../../scss/variables" as *;
 @use "../../scss/mixins" as *;
+@use "../../scss/breakpoints" as *;
 
 .wrapper{
     width: 100%;
     height: 100%;
 
+    @include nm-screen{
+        display: flex;
+        justify-content: space-around;
+    }
+
     .optionContainer{
         padding-block: $spacing-sm-2;
         border-bottom: 1px solid $txt-main;
+
+        @include nm-screen{
+            border-bottom: none;
+        }
 
         .optionsLabel{
             cursor: pointer;

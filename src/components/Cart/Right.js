@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "./Right.module.scss"
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { close } from '../../redux/openCart'
 
 /*Components*/
@@ -8,7 +8,8 @@ import Card from './Card'
 
 const Right = () => {
     const dispatch = useDispatch();
-    
+    const items = useSelector(state => state.cartSlice);
+
   return (
     <div className={styles.wrapper}>
         <div className={styles.top}>
@@ -20,8 +21,11 @@ const Right = () => {
             </div>
         </div>
         <div className={styles.center}>
-            <Card />
-
+            {
+                items.length ? 
+                items.map(el => <Card el={el} key={el.id}/>) :
+                <p className={styles.empty}>Your cart is empty</p>
+            }
         </div>
         <div className={styles.bottom}>
             <div className={styles.priceContainer}>
@@ -29,7 +33,11 @@ const Right = () => {
                     <p> Grand total incl. tax</p>
                 </div>
                 <div className={styles.right}>
-                    <p className={styles.price}>$999.56</p>
+                    <p className={styles.price}>$
+                    {items?.reduce((acc, val) => 
+                        acc + (val.amount*val.price)
+                    , 0)}
+                    .00</p>
                 </div>
             </div>
             <div className={styles.btnContainer}>

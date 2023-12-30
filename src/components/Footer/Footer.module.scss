@@ -1,5 +1,6 @@
 @use "../../scss/mixins" as *;
 @use "../../scss/variables" as *;
+@use "../../scss/breakpoints" as *;
 
 .container{
     @include container;
@@ -16,16 +17,34 @@
     display: flex;
     justify-content: space-between;
 
+    @include custom-screen($breakpoint: 600px){
+        flex-direction: column;
+        justify-content: center;
+        gap: $spacing-sm-2;
+    }
+
     .left{
         font-size: $txt-l-1;
         font-family: 'Bebas Neue', sans-serif;
         cursor: default;
+
+        @include xl-screen{
+            font-size: $txt-nm-3;
+        }
     }
 
     .right{
         display: flex;
         gap: $spacing-nm-4;
         font-size: $txt-sm-2;
+
+        @include xl-screen{
+            font-size: $txt-sm-1;
+        }
+
+        @include custom-screen($breakpoint: 600px){
+            margin-bottom: $spacing-sm-2;
+        }
 
         .list{
             display: flex;
@@ -46,6 +65,15 @@
         font-style: italic;
         line-height: 1;
         color: $bg-main;
+
+        @include xl-screen{
+            font-size: $txt-rsp-5;
+        }
+
+        @include custom-screen($breakpoint: 600px){
+            margin-bottom: $spacing-sm-2;
+        }
+
     }
 }
 
@@ -53,6 +81,10 @@
     display: flex;
     justify-content: space-between;
     font-size: $txt-sm-2;
+
+    @include xl-screen{
+        font-size: $txt-sm-1;
+    }
 
     .left{
         cursor: default;

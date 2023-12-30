@@ -1,6 +1,8 @@
 import React, { useEffect, useRef } from 'react'
 import styles from "./Category.module.scss"
 import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { setQuery } from '../../redux/database';
 
 import { gsap, Power4 } from "gsap";
 import { ScrollTrigger } from 'gsap/all';
@@ -9,6 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 const Category = ({img1, url1, img2, url2, img3, url3}) => {
     const masks = useRef([]);
     const container = useRef();
+    const dispatch = useDispatch();
 
     useEffect(() => {
         gsap.to(masks.current, {
@@ -29,15 +32,16 @@ const Category = ({img1, url1, img2, url2, img3, url3}) => {
         <div className={styles.categories} ref={container}>
             <div className={styles.category}>
                 <div className={styles.imgContainer}>
-                    <Link to={url1}>
-                        <img src={img1} alt={url1}></img>
+                    <Link to={'/shop'} onClick={() => dispatch(setQuery(url1))}>
+                        <img src={img1} alt={url1} />
                     </Link>
+                    
                     <div className={styles.mask} ref={el => masks.current.push(el)}></div>
                 </div>
             </div>
             <div className={styles.category}>
                 <div className={styles.imgContainer}>
-                    <Link to={url2}>
+                    <Link to={'/shop'} onClick={() => dispatch(setQuery(url2))}>
                         <img src={img2} alt={url2}></img>
                     </Link>
                     <div className={styles.mask} ref={el => masks.current.push(el)}></div>
@@ -45,7 +49,7 @@ const Category = ({img1, url1, img2, url2, img3, url3}) => {
             </div>
             <div className={styles.category}>
                 <div className={styles.imgContainer}>
-                    <Link to={url3}>
+                    <Link to={'/shop'} onClick={() => dispatch(setQuery(url3))}>
                         <img src={img3} alt={url3}></img>
                     </Link>
                     <div className={styles.mask} ref={el => masks.current.push(el)}></div>

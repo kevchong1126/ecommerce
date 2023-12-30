@@ -1,5 +1,6 @@
 @use "../../scss/variables" as *;
 @use "../../scss/mixins" as *;
+@use "../../scss/breakpoints" as *;
 
 .wrapper{
     width: 100%;
@@ -9,10 +10,26 @@
         display: flex;
         gap: $spacing-sm-3;
 
+        @include nm-screen{
+            height: 300px;
+        }
+        @include custom-screen($breakpoint: 600px){
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+        }
         .blog{
             width: 350px;
             height: 500px;
             border-bottom: 1px solid $txt-main;
+
+            @include xl-screen{
+                height: 400px;
+            }
+
+            @include nm-screen{
+                height: 300px;
+            }
 
             .imgContainer{
                 width: 100%;
@@ -29,6 +46,15 @@
             .title{
                 padding-block: $spacing-sm-3;
                 font-size: $txt-nm-2;
+
+                @include xl-screen{
+                    padding-block: $spacing-sm-1;
+                    font-size: $txt-sm-4;
+                }
+
+                @include nm-screen{
+                    font-size: $txt-sm-2;
+                }
             }
         }
     }

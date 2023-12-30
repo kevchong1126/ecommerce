@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from "./Footer.module.scss"
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -8,13 +9,18 @@ const Footer = () => {
 
             <div className={styles.top}>
                 <div className={styles.left}>
-                    <p>Join our community</p>
+                    <p>Developed by kevin chong</p>
                 </div>
                 <div className={styles.right}>
                     <ul className={styles.list}>
-                        <li>Apparel</li>
-                        <li>Sneaker</li>
-                        <li>Accessories</li>
+                        <Link to={'/shop'}><li>Shop</li></Link>
+                        <Link to={'/'}><li>Home</li></Link>
+                        <Link to={'/culture'}><li>Blogs</li></Link>
+                    </ul>
+                    <ul className={styles.list}>
+                        <Link to={'/apparel'}><li>Apparel</li></Link>
+                        <Link to={'/sneakers'}><li>Sneaker</li></Link>
+                        <Link to={'/accessory'}><li>Accessories</li></Link>
                     </ul>
                     <ul className={styles.list}>
                         <li>Privacy Policy</li>
@@ -30,7 +36,7 @@ const Footer = () => {
 
             <div className={styles.bottom}>
                 <div className={styles.left}>
-                 © 2023 HYPED, Developed by kevin chong
+                 © 2023 HYPED Copyright
                 </div>  
                 <div className={styles.right}>
                     <p>Instagram</p>

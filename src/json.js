@@ -1,4 +1,4 @@
-[
+const json =[
     {
         "title": "Dunk high w",
         "image": "./images/sneaker1.webp",
@@ -93,7 +93,7 @@
         "title": "550 lifestyle red",
         "image": "./images/sneaker11.webp",
         "brand": "new balance",
-        "price": "249",
+        "price": "449",
         "logo": "./images/nb.avif",
         "id": "75fc2c14",
         "sizes" : ["8", "9", "10", "11"]
@@ -129,7 +129,7 @@
         "title": "327 lifestyle",
         "image": "./images/sneaker15.webp",
         "brand": "new balance",
-        "price": "300",
+        "price": "350",
         "logo": "./images/nb.avif",
         "id": "40cc39e6",
         "sizes" : ["8", "9", "10", "11"]
@@ -174,7 +174,7 @@
         "title": "Sfb mink shoe",
         "image": "./images/sneaker20.webp",
         "brand": "birkenstock",
-        "price": "219",
+        "price": "349",
         "logo": "./images/bk.avif",
         "id": "31d1fccb",
         "sizes" : ["8", "9", "10", "11"]
@@ -412,4 +412,6 @@
         "sizes" : ["s", "m", "l"]
     }
 
-]
+];
+
+export default json

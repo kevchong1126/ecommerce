@@ -32,7 +32,13 @@
         &::-webkit-scrollbar{
             display: none;
         }
-    
+        
+        .empty{
+            font-size: $txt-l-1;
+            opacity: 0.5;
+            text-align: center;
+            @include stint;
+        }
     }
 
     .bottom{

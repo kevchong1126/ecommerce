@@ -1,12 +1,22 @@
 @use "../../scss/mixins" as  *;
 @use "../../scss/variables" as  *;
+@use "../../scss/breakpoints" as  *;
 
 
 .wrapper{
-    font-size: $txt-rsp-6;
+    font-size: $txt-rsp-4;
     white-space: nowrap;
     animation: slide 10s linear infinite;
     @include bebas;
+
+    @include xxl-screen{
+        font-size: $txt-rsp-5;
+    }
+
+    @include xl-screen{
+        font-size: $txt-rsp-6;
+    }
+
 }
 
 @keyframes slide{

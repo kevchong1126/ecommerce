@@ -1,7 +1,7 @@
 
 $sizes : (
-    "sm" : 500px,
-    "nm" : 768px,
+    "sm" : 400px,
+    "nm" : 810px,
     "l" : 1024px,
     "xl" : 1280px,
     "xxl" : 1768px
@@ -30,3 +30,15 @@ $sizes : (
         @content;
     }
 };
+
+@mixin xxl-screen{
+    @media (max-width: map-get($sizes, "xxl")){
+        @content;
+    }
+};
+
+@mixin custom-screen($breakpoint: 1000px){
+    @media (max-width: $breakpoint){
+        @content
+    }
+}

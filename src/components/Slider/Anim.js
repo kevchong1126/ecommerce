@@ -10,7 +10,7 @@ const Anim = ({text, color}) => {
     const container = useRef();
 
     useEffect(() => {
-        gsap.from(word.current, {
+        const tl = gsap.from(word.current, {
             yPercent: 100,
             duration: 1,
             ease: Power4.easeOut,
@@ -19,9 +19,11 @@ const Anim = ({text, color}) => {
             },
             scrollTrigger: {
                 trigger: container.current,
-                start: "top 80%"
+                start: "top 70%",
             }
         })
+
+        return () => tl.revert()
     }, [])
   return (
     <div className={styles.wrapper}>

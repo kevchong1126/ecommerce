@@ -1,5 +1,6 @@
 @use "../scss/variables" as *;
 @use "../scss/mixins" as *;
+@use "../scss/breakpoints" as *;
 
 .container{
     @include container;
@@ -24,16 +25,29 @@
     justify-content: space-between;
     border-top: 1px solid $txt-main;
 
+    @include nm-screen{
+        flex-direction: column;
+    }
+
     .left{
         width: 35%;
         padding-top: $spacing-sm-4;
         padding-right: $spacing-nm-2;
         border-right: 1px solid $txt-main;
+
+        @include nm-screen{
+            width: 100%;
+            border-right: none;
+        }
     }
 
     .right{
         width: 65%;
         padding-top: $spacing-sm-4;
         padding-inline: $spacing-sm-3;
+
+        @include nm-screen{
+            width: 100%;
+        }
     }
 }

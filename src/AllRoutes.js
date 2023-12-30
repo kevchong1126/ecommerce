@@ -1,5 +1,5 @@
 import React from 'react'
-import { Routes, Route, RouterProvider } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 
 /*Components*/
 import Home from "./pages/Home";
@@ -10,11 +10,14 @@ import Sneakers from './pages/Sneakers';
 import Apparel from './pages/Apparel';
 import Accessory from './pages/Accessory';
 import Shop from './pages/Shop';
+import Product from './pages/Product';
 
 const AllRoutes = () => {
   return (
     <>
         <Routes>
+        
+
           <Route index path="/" element={<Home />} />
 
           <Route path='/culture'>
@@ -22,9 +25,10 @@ const AllRoutes = () => {
             <Route path=":blog" element={<Wanda />}/>
           </Route>
 
-          <Route path='/shop'>
-            <Route index element={<Shop />}></Route>
-            <Route path=':query' element={<Shop/>}></Route>
+          <Route path='/product/:id' element={<Product />}></Route>
+
+          <Route path='/shop' >
+              <Route index element={<Shop />} />
           </Route>
 
           <Route path='/sneakers' element={<Sneakers />} />

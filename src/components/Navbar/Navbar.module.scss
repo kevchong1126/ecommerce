@@ -1,5 +1,6 @@
 @use "../../scss/variables" as *;
 @use "../../scss/mixins" as *;
+@use "../../scss/breakpoints" as *;
 
 .container{
     position: fixed;
@@ -28,9 +29,14 @@
 .center{
     margin-right: $spacing-l-5;
 
+    @include xl-screen{
+        margin-right: 0;
+    }
+
     .links{
         width: 100%;
         display: flex;
+        align-items: center;
         gap: $spacing-nm-2;
         
         a{
@@ -38,6 +44,24 @@
             
             &:hover{
                 color: $yellow;
+            }
+        }
+
+        .link{
+            @include custom-screen($breakpoint: 801px){
+                display: none;
+            }
+        }
+
+        .shop{
+            font-size: $txt-nm-3;
+            letter-spacing: 1px;
+            line-height: 1;
+            margin-right: $spacing-nm-1;
+            @include bebas;
+
+            @include xl-screen{
+                margin-right: 0;
             }
         }
     }

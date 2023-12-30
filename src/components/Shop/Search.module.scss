@@ -41,5 +41,37 @@
         justify-content: space-between;
         margin-top: $spacing-sm-4;
         font-size: $txt-nm-2;
+
+        .sortContainer{
+            position: relative; 
+            z-index: 9;
+
+            .sortLabel{
+                display: flex;
+                cursor: pointer;
+            }
+
+            .list{
+                position: absolute;
+                top: 110%;
+                width: 150%;
+                right: 0%;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                border: 1px solid $txt-main;
+                padding: $spacing-sm-1;
+                font-size: $txt-sm-4;
+                background-color: $bg-main;
+
+                .item{
+                    cursor: pointer;
+
+                    &:hover{
+                        background-color: $gray;
+                    }
+                }
+            }
+        }
     }
 }

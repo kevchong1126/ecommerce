@@ -7,8 +7,8 @@ import Brands from './Brands';
 import Prices from './Prices';
 
 const Filters = () => {
-    const [brands, setBrands] = useState(false);
-    const [prices, setPrices] = useState(false);
+    const [brands, setBrands] = useState(true);
+    const [prices, setPrices] = useState(true);
 
   return (
     <div className={styles.wrapper}>

@@ -4,7 +4,7 @@ import styles from "./Left.module.scss"
 /*Components*/
 import Options from './Options'
 
-import json from "../../json.json"
+import json from "../../json"
 
 const array = [json[28], json[38], json[37], json[39]];
 

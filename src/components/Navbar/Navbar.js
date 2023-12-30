@@ -19,8 +19,8 @@ const Navbar = () => {
             </div>
             <div className={styles.center}>
                 <ul className={styles.links}>
-                    <li className={styles.link}>
-                        <Link to="/shop">Shop </Link>
+                    <li className={styles.shop}>
+                        <Link to="/shop">Shop All</Link>
                     </li>
                     <li className={styles.link}>
                         <Link to="/sneakers">Sneakers</Link>
@@ -28,11 +28,12 @@ const Navbar = () => {
                     <li className={styles.link}>
                         <Link to="/apparel">Apparel</Link>
                     </li>
+                    
                     <li className={styles.link}>
                         <Link to="/accessory">Accessories</Link>
                     </li>
                     <li className={styles.link}>
-                        <Link to="/culture">Culture</Link>
+                        <Link to="/culture">Blogs</Link>
                     </li>
                 </ul>
             </div>

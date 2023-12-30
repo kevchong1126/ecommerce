@@ -6,7 +6,7 @@ import SlidingText from '../components/Slider/SlidingText'
 import Featured from '../components/Hero/Featured'
 import HeroProduct from "../components/Slider/HeroProducts"
 
-import json from "../json.json"
+import json from "../json"
 
 const Sneakers = () => {
   return (

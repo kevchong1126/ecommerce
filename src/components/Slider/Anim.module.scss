@@ -1,15 +1,20 @@
 @use "../../scss/variables" as *;
 @use "../../scss/mixins" as *;
+@use "../../scss/breakpoints" as *;
 
 .wrapper{
     width: 100%;
     height: 100%;
-    font-size: $txt-rsp-6;
+    font-size: $txt-rsp-5;
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 5px;
     margin-block: $spacing-sm-4;
     cursor: default;
     
+    @include xxl-screen{
+        font-size: $txt-rsp-6;
+    }
+
     .textContainer{
         overflow: hidden;
         line-height: 1;

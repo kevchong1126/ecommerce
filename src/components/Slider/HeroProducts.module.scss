@@ -1,5 +1,6 @@
 @use "../../scss/variables" as *;
 @use "../../scss/mixins" as *;
+@use "../../scss/breakpoints" as *;
 
 .wrapper{
     width: 100%;
@@ -11,6 +12,13 @@
         height: 100%;
         flex-wrap: nowrap;
 
+        @include custom-screen($breakpoint: 600px){
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
         .card{
             width: 100%;
             height: 520px;
@@ -18,6 +26,20 @@
             border-top: 1px solid $txt-main;
             border-bottom: 1px solid $txt-main;
             padding: $spacing-sm-3;
+
+            @include xl-screen{
+                height: 400px;
+            }
+
+            @include nm-screen{
+                height: 300px;
+            }
+
+            @include custom-screen($breakpoint:600px){
+                height: 250px;
+                width: 70%;
+                border: none;
+            }
 
             &:first-of-type{
                 border-left: none;
@@ -49,6 +71,14 @@
                 margin-top: $spacing-sm-1;
                 @include bebas;
 
+                @include xl-screen{
+                    font-size: $txt-nm-2;
+                }
+
+                @include custom-screen($breakpoint:600px){
+                    font-size: $txt-sm-3;
+                }
+
                 p{
                     display: inline-block;
                     letter-spacing: 2px;
@@ -58,6 +88,14 @@
             .priceContainer{
                 font-size: $txt-nm-4;
                 @include stint;
+
+                @include xl-screen{
+                    font-size: $txt-nm-2;
+                }
+
+                @include custom-screen($breakpoint:600px){
+                    font-size: $txt-sm-3;
+                }
 
                 .price{
                     display: inline-block;
