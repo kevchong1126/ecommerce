@@ -15,7 +15,7 @@ const Navbar = () => {
     <div className={styles.container}>
         <div className={styles.content}>
             <div className={styles.left}>
-                <Link to="/" className={styles.title}>HYPED</Link>
+                <Link to="/ecommerce" className={styles.title}>HYPED</Link>
             </div>
             <div className={styles.center}>
                 <ul className={styles.links}>

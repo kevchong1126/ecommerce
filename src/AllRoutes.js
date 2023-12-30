@@ -18,7 +18,7 @@ const AllRoutes = () => {
         <Routes>
         
 
-          <Route index path="/" element={<Home />} />
+          <Route index path="/ecommerce" element={<Home />} />
 
           <Route path='/culture'>
             <Route index element={<Culture />} />

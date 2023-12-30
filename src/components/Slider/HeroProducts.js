@@ -23,8 +23,8 @@ const Card = ({card}) => {
         <div className={styles.card}>
           <div className={styles.imgContainer}>
             <Link to={`/product/${card.id}`}>
-              <img className={styles.thumbnail} src={'/' + card.image} alt={card.title}></img>
-              <img className={styles.logo} src={'/' + card.logo} alt={card.logo}></img>
+              <img className={styles.thumbnail} src={card.image} alt={card.title}></img>
+              <img className={styles.logo} src={card.logo} alt={card.logo}></img>
             </Link>
           </div>
           <div className={styles.titleContainer}>
