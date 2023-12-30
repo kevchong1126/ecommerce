@@ -1,55 +1,55 @@
 const json =[
     {
         "title": "Dunk high w",
-        "image": "./images/sneaker1.webp",
+        "image": "/images/sneaker1.webp",
         "brand": "nike",
         "price": "219",
-        "logo": "./images/nike.webp",
+        "logo": "/images/nike.webp",
         "id": "173e9dee",
         "sizes" : ["8", "9", "10", "11"]
     },
     {
         "title": "Air jordan ii retro",
-        "image": "./images/sneaker2.webp",
+        "image": "/images/sneaker2.webp",
         "brand": "jordan",
         "price": "249",
-        "logo": "./images/jordan.webp",
+        "logo": "/images/jordan.webp",
         "id": "96ce6063",
         "sizes" : ["8", "9", "10", "11"]
     },
     {
         "title": "Air max 87 lx",
-        "image": "./images/sneaker3.webp",
+        "image": "/images/sneaker3.webp",
         "brand": "nike",
         "price": "149",
-        "logo": "./images/nike.webp",
+        "logo": "/images/nike.webp",
         "id": "3cdda71e",
         "sizes" : ["8", "9", "10", "11"]
     },
     {
         "title": "Air jordan 4 retro",
-        "image": "./images/sneaker4.webp",
+        "image": "images/sneaker4.webp",
         "brand": "jordan",
         "price": "199",
-        "logo": "./images/jordan.webp",
+        "logo": "images/jordan.webp",
         "id": "ecc8d7b8",
         "sizes" : ["8", "9", "10", "11"]
     },
     {
         "title": "Air jordan i element",
-        "image": "./images/sneaker5.webp",
+        "image": "images/sneaker5.webp",
         "brand": "jordan",
         "price": "219",
-        "logo": "./images/jordan.webp",
+        "logo": "images/jordan.webp",
         "id": "92384578",
         "sizes" : ["8", "9", "10", "11"]
     },
     {
         "title": "Air max og",
-        "image": "./images/sneaker6.webp",
+        "image": "images/sneaker6.webp",
         "brand": "nike",
         "price": "79",
-        "logo": "./images/nike.webp",
+        "logo": "images/nike.webp",
         "id": "e3715c63",
         "sizes" : ["8", "9", "10", "11"]
     },
