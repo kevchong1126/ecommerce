@@ -15,7 +15,7 @@ const Card = ({el}) => {
 
         <div className={styles.left}>
             <div className={styles.imgContainer}>
-                <img src={'/' + image} alt={title}></img>
+                <img src={process.env.PUBLIC_URL + image} alt={title}></img>
             </div>
             <div className={styles.center}>
                 <div className={styles.top}>
