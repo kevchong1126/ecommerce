@@ -8,7 +8,7 @@ const Options = ({el}) => {
     <div className={styles.wrapper}>
       <Link to={`/product/${el.id}`}>
           <div className={styles.imgContainer}>
-              <img src={'/' + el.image} alt={el.id}></img>
+              <img src={process.env.PUBLIC_URL + el.image} alt={el.id}></img>
           </div>
           <p className={styles.title}>{el.title}</p>
           <p className={styles.price}>${el.price}</p>

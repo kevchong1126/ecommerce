@@ -16,7 +16,7 @@ const Left = () => {
 
   return (
     <div className={styles.wrapper}>
-        <img src={'/' + product?.image} alt={product?.title}></img>
+        <img src={process.env.PUBLIC_URL + product?.image} alt={product?.title}></img>
     </div>
   )
 }

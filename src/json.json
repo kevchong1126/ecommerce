@@ -1,4 +1,4 @@
-const json =[
+[
     {
         "title": "Dunk high w",
         "image": "/images/sneaker1.webp",
@@ -100,28 +100,28 @@ const json =[
     },
     {
         "title": "9060 lifestyle black",
-        "image": "./images/sneaker12.webp",
+        "image": "/images/sneaker12.webp",
         "brand": "new balance",
         "price": "175",
-        "logo": "./images/nb.avif",
+        "logo": "/images/nb.avif",
         "id": "a160f85a",
         "sizes" : ["8", "9", "10", "11"]
     },
     {
         "title": "550 lifestyle white",
-        "image": "./images/sneaker13.webp",
+        "image": "/images/sneaker13.webp",
         "brand": "new balance",
         "price": "224",
-        "logo": "./images/nb.avif",
+        "logo": "/images/nb.avif",
         "id": "d8653d2d",
         "sizes" : ["8", "9", "10", "11"]
     },
     {
         "title": "550 lifestyle wine",
-        "image": "./images/sneaker14.webp",
+        "image": "/images/sneaker14.webp",
         "brand": "new balance",
         "price": "145",
-        "logo": "./images/nb.avif",
+        "logo": "/images/nb.avif",
         "id": "77df2d36",
         "sizes" : ["8", "9", "10", "11"]
     },
@@ -339,28 +339,28 @@ const json =[
     },
     {
         "title": "Silk black socks",
-        "image": "./images/accessory10.webp",
+        "image": "/images/accessory10.webp",
         "brand": "nike",
         "price": "85",
-        "logo": "./images/nike.webp",
+        "logo": "/images/nike.webp",
         "id": "8f47ed5e",
         "sizes" : []
     },
     {
         "title": "Daily cushion socks",
-        "image": "./images/accessory11.webp",
+        "image": "/images/accessory11.webp",
         "brand": "nike",
         "price": "45",
-        "logo": "./images/nike.webp",
+        "logo": "/images/nike.webp",
         "id": "c651b422",
         "sizes" : []
     },
     {
         "title": "No show socks",
-        "image": "./images/accessory12.webp",
+        "image": "/images/accessory12.webp",
         "brand": "nike",
         "price": "43",
-        "logo": "./images/nike.webp",
+        "logo": "/images/nike.webp",
         "id": "b158e7c2",
         "sizes" : []
     },
@@ -412,6 +412,4 @@ const json =[
         "sizes" : ["s", "m", "l"]
     }
 
-];
-
-export default json
+]
