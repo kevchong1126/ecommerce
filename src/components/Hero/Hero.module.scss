@@ -1,5 +1,6 @@
 @use "../../scss/variables" as *;
 @use "../../scss/mixins" as *;
+@use "../../scss/breakpoints" as *;
 
 .wrapper{
     border: 1px solid $txt-main;
@@ -7,7 +8,14 @@
     height: 86vh;
     overflow: hidden;
 
-    
+    @include custom-screen($breakpoint: 600px){
+        height: 400px;
+    }
+
+    @include custom-screen($breakpoint: 500px){
+        height: 250px;
+    }
+
     .imgContainer{
         width: 100%;
         height: 100%;

@@ -1,6 +1,6 @@
 @use "../../scss/mixins" as *;
 @use "../../scss/variables" as *;
-
+@use "../../scss/breakpoints" as *;
 
 .wrapper{
     width: 100%;
@@ -11,9 +11,20 @@
         display: flex;
         gap: $spacing-sm-4;
 
+        @include custom-screen($breakpoint: 500px){
+            flex-direction: column;
+            gap: $spacing-sm-2;
+            height: 800px;
+        }
+
         .category{
             flex: 1;
-        
+            
+            @include custom-screen($breakpoint: 500px){
+                height: 33%;
+                width: 100%;
+            }
+
             .imgContainer{
                 position: relative;
                 width: 100%;

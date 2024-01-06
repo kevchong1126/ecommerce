@@ -3,6 +3,7 @@
 
 .container{
     @include container;
+    height: auto;
     margin-top: $spacing-l-1;
     
     .content{
